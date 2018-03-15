@@ -1,0 +1,53 @@
+*{margin: 0;padding: 0;}
+
+/*  Body */
+body{
+	font-size:14px;
+	color:#666;
+	background:#FFF no-repeat;
+	/* CSS3 Radial Gradients */
+	background-image:-moz-radial-gradient(center -100px 45deg, circle farthest-corner, #FFF 150px, #FFF 300px);
+	background-image:-webkit-gradient(radial, 50% 0, 150, 50% 0, 300, from(#FFF), to(#FFF));
+
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* Page One */
+div#content_page_1{
+  border: solid 1px rgba(220, 220,220,1);
+  border-radius: 4px;
+  height: 200px;
+  width: 400px;
+}
+
+
+/* Page Three: Button */
+div#btn_button_p3{
+    background: rgba(250,250,250,1);
+    border-bottom: solid 1px rgba(220,220,220,1) ;
+    border-top: solid 1px rgba(220,220,220,1) ;
+    border-radius: 4px ;
+    color: rgba(220,220,220,1);
+    cursor: pointer;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    width: 100px;
+                              /* Quitar selección de texto */
+                          -webkit-user-select: none;
+                          -moz-user-select: none;
+                          -ms-user-select: none;
+                          user-select: none;
+}
+div#btn_button_p3:hover{
+  background: rgba(245,245,245,1);
+  color: rgba(180,180,180,1);
+}
+div#btn_button_p3:active{
+  background: rgba(240,240,240,1);
+  border-bottom: solid 1px rgba(180,180,180,1) ;
+  border-top: solid 1px rgba(180,180,180,1) ;
+  color: rgba(150,150,150,1);
+}
+div#btn_button_p3 div.label{padding: 10px;}

@@ -1,0 +1,163 @@
+
+  /*  contenedor universe  */
+            div#universe{
+                  margin: auto;
+                  padding: 10px 0 0 0;
+                  width: 850px;
+            }
+            div#universe nav#browser,
+            div#universe div#app{
+                  display: inline-block;
+                  vertical-align: top;
+            }
+            /* Left: Navegador */
+            div#universe nav#browser{
+                  min-height: 200px;
+                  width: 100px;
+            }
+                    nav#browser ul{}
+                    nav#browser ul li{
+                          list-style:none;
+                          height:45px;
+                          padding:2px;
+                          width:45px;
+                    }
+                    nav#browser ul li a{
+                    /*      background: url(../img/navigation.jpg) no-repeat; */
+                          border: solid 1px rgba(200,200,200,.5);
+                          border-radius: 50%;
+                          display: block;
+                          height: 45px;
+                          position: relative;
+                          width: 45px;
+                          z-index: 1;
+                    }
+                    nav#browser ul li a div.text{
+                          border-radius: 4px;
+                          width: 0;
+                          left: 45px;
+                          font-family: 'Myriad Pro',Arial, Helvetica, sans-serif;
+                          font-size: 18px;
+                          font-weight: bold;
+                          letter-spacing: 0.6px;
+                          margin: 0 0 0 -25px;
+                          overflow: hidden;
+                          padding: 0;
+                          position: absolute;
+                          white-space: nowrap;
+                          line-height: 45px;
+                          -webkit-transition: 0.25s;
+                          -moz-transition: 0.25s;
+                          transition: 0.5s;
+                    }
+                    nav#browser ul li a div.text div{
+                            overflow: hidden;
+                            width: 0;
+
+                              /* Efecto */
+                              -webkit-transition: 0.25s;
+                              -moz-transition: 0.25s;
+                              transition: 0.5s;
+                    }
+
+                      nav#browser ul li a div.text div.circle{
+                            height: 45px;
+                            border-radius: 100%;
+                            background-color: #FFF;
+                            margin: 0 0 0 -20px;
+                            position: absolute;
+                            width: 0;/* 45px; */
+                    }
+                    nav#browser ul li a div.text div.label{
+                          display: inline-block;
+                          opacity: 0;
+                          overflow: hidden;
+                          width: 0;
+                            /* Efecto */
+                            -webkit-transition: 0.25s;
+                            -moz-transition: 0.25s;
+                            transition: 0.8s;
+
+                  }
+
+                    nav#browser ul li a:hover div.text{
+                         background: rgba(200,200,200,.5);
+                         width:auto;
+                         overflow:visible;
+                      }
+                      nav#browser ul li a:hover div.text div.label{
+
+                          margin: 0 0 0 40px;
+                          opacity: 1;
+                          overflow:visible;
+                          padding:  0 20px 0 0;
+                          width: auto;
+                      }
+                      nav#browser ul li a:hover div.text div.circle{
+                          display: inline-block;
+                          overflow:visible;
+                          width: 45px;
+                      }
+
+                    nav#browser ul li a:hover{
+                        	text-decoration:none;
+                        	/* CSS outer glow with the box-shadow property */
+                        	-moz-box-shadow:0 0 5px rgba(0, 95, 137, 0.95);
+                        	-webkit-box-shadow:0 0 5px rgba(0, 95, 137, 0.95);
+                        	box-shadow:0 0 5px rgba(0, 95, 137, 0.95);
+                    }
+
+
+            /* Center: Contenedor central */
+            div#universe div#app{
+                  border: solid 1px rgba(200,200,200,.2);
+                  min-height: 200px;
+                  width: 80%;
+            }
+
+
+
+      /* Header: title */
+          div#header{
+                background: rgba(0, 95, 137, 0.95);
+                height: 30px;
+          }
+          div#header div.label{
+                color: rgba(240,240,240,1);
+                font-size: 1.1em;
+                font-weight: bold;
+                padding: 5px 0 5px 0;
+                text-align: center;
+          }
+
+
+
+        /* Local Browser */
+                ul.tab_list{
+                      border-bottom: solid 1px rgba(0, 95, 137, 0.2);
+                }
+                ul.tab_list li.tab{
+                      border-bottom: solid 3px rgba(0, 95, 137, 0);
+                      cursor: pointer;
+                      display: inline-block;
+                      padding: 10px 15px;
+                      vertical-align: top;
+                                      /* animation */
+                                      transition: border-bottom .3s ease-in-out;
+                                      -moz-transition: border-bottom .3s ease-in-out;
+                                      -webkit-transition: border-bottom .3s ease-in-out;
+                                      /* Remove selection */
+                                              -webkit-user-select: none;
+                                              -moz-user-select: none;
+                                              -ms-user-select: none;
+                                              user-select: none;
+                }
+                ul.tab_list li.tab:hover{
+                      border-bottom: solid 3px rgba(0, 95, 137, 0.4);
+                      display: inline-block;
+                      vertical-align: top;
+                }
+                /* list active */
+                ul.tab_list li.active{
+
+                }
